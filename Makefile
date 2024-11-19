@@ -5,9 +5,9 @@ all: build
 
 build:
 	@echo "Building..."
-	
-	
-	@go build -o main cmd/api/main.go
+
+
+	@go build -o ./bin/main cmd/api/main.go
 
 # Run the application
 run:
@@ -48,7 +48,7 @@ itest:
 # Clean the binary
 clean:
 	@echo "Cleaning..."
-	@rm -f main
+	@rm -f ./bin
 
 # Live Reload
 
